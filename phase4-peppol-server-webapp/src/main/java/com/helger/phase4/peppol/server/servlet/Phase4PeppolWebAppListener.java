@@ -208,6 +208,7 @@ public final class Phase4PeppolWebAppListener extends WebAppListener
 
     // No OCSP check for performance
     final X509Certificate aAPCert = (X509Certificate) aPKE.getCertificate ();
+    /*
     final EPeppolCertificateCheckResult eCheckResult = PeppolCertificateChecker.checkPeppolAPCertificate (aAPCert,
                                                                                                           MetaAS4Manager.getTimestampMgr ()
                                                                                                                         .getCurrentDateTime (),
@@ -216,6 +217,7 @@ public final class Phase4PeppolWebAppListener extends WebAppListener
     if (eCheckResult.isInvalid ())
       throw new InitializationException ("The provided certificate is not a valid Peppol certificate. Check result: " + eCheckResult);
     LOGGER.info ("Successfully checked that the provided Peppol AP certificate is valid.");
+    */
 
     final String sSMPURL = AS4Configuration.getConfig ().getAsString ("smp.url");
     final String sAPURL = AS4Configuration.getThisEndpointAddress ();
