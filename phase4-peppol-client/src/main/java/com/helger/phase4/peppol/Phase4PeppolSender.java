@@ -239,6 +239,7 @@ public final class Phase4PeppolSender
                                                                                                               null);
 
     // Interested in the certificate?
+    /*
     if (aCertificateConsumer != null)
       aCertificateConsumer.onCertificateCheckResult (aReceiverCert, aNow, eCertCheckResult);
 
@@ -249,6 +250,7 @@ public final class Phase4PeppolSender
                                        ") and cannot be used for sending. Aborting. Reason: " +
                                        eCertCheckResult.getReason ());
     }
+    */
   }
 
   /**
